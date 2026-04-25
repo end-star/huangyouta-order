@@ -935,7 +935,6 @@
         }
         
         function changeWelcomePerson(delta) {
-            alert('changeWelcomePerson 点击了! delta=' + delta);
             personCount += delta;
             if (personCount < 1) personCount = 1;
             if (personCount > 20) personCount = 20;
@@ -943,7 +942,6 @@
         }
         
         function startOrder() {
-            alert('startOrder 点击了! personCount=' + personCount);
             document.getElementById('personCount').innerHTML = personCount;
             document.getElementById('welcomeModal').style.display = 'none';
             updateCart();
